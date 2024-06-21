@@ -1,33 +1,33 @@
 #include <bits/stdc++.h>
-using namespace std;
 
-using ll = long long;
+using namespace std;
+typedef long long ll;
+const int mod = 1000000007;
+#define max_n 201
+#define quick() ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+
+/*created by: HiuDev*/
+
 
 int main(){
-    #ifndef ONLINE_JUDGE
-    freopen("input.txt", "r", stdin);
-    freopen("output.txt", "w", stdout);
-    #endif
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int n, S = 0;
-    cin >> n >> S;
-    int c[n];
+    quick();
+    int n, s;
+    cin >> n >> s;
+    vector<int> v;
     for(int i = 0; i < n; i++){
-        cin >> c[i];
+        int x; cin >> x;
+        v.push_back(x);
     }
-    int F[S + 1] = {0};
-    //F[i] : số lượng đồng xu nhỏ nhất để tạo nên lượng tiền là i
-    F[0] = 1;
-    int mod = 1e9 + 7;
-    for(int i = 1; i <= S; i++){
-        F[i] = 0;
-        for(int coin : c){
+    ll dp[s + 1] = {0};
+    dp[0] = 1;
+    for(int i = 1; i <= s; i++){
+        for(int coin : v){
             if(i >= coin){
-                F[i] += F[i - coin];
-                F[i] %= mod;
+                dp[i] += dp[i - coin];
+                dp[i] %= mod;
             }
         }
     }
-    cout << F[S] << endl;
+    cout << dp[s] << endl;
+    return 0;
 }
