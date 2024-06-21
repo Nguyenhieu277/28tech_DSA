@@ -1,0 +1,1 @@
+{"name":"Local: sum_string","url":"d:\\work\\DSA\\sum_string.cpp","tests":[{"id":1717856121833,"input":"3\n1 1 1 \n1 0 0 \n1 0 0","output":"111001100"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\work\\DSA\\sum_string.cpp","group":"local","local":true}

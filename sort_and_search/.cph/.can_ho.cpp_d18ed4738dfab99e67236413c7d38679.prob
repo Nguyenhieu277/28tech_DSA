@@ -1,0 +1,1 @@
+{"name":"Local: can_ho","url":"d:\\work\\DSA\\sort_and_search\\can_ho.cpp","tests":[{"id":1716026052126,"input":"4 3 5\n60 45 80 60\n30 60 75","output":"2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\work\\DSA\\sort_and_search\\can_ho.cpp","group":"local","local":true}

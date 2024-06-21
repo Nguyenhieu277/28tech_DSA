@@ -1,0 +1,1 @@
+{"name":"Local: day_con_co_tong_le","url":"d:\\work\\DSA\\BackTracking\\day_con_co_tong_le.cpp","tests":[{"id":1717170237575,"input":"4\n9 7 9 9","output":"7 \n7 9 9 \n9 \n9 \n9 \n9 7 9 \n9 7 9 \n9 9 9"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\work\\DSA\\BackTracking\\day_con_co_tong_le.cpp","group":"local","local":true}

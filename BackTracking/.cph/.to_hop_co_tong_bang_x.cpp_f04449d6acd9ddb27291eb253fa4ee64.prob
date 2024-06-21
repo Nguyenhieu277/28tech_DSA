@@ -1,0 +1,1 @@
+{"name":"Local: to_hop_co_tong_bang_x","url":"d:\\work\\DSA\\BackTracking\\to_hop_co_tong_bang_x.cpp","tests":[{"id":1717065168427,"input":"3 10\n4 2 3","output":"5\n{2 2 2 2 2}\n{2 2 2 4}\n{2 2 3 3}\n{2 4 4}\n{3 3 4}"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\work\\DSA\\BackTracking\\to_hop_co_tong_bang_x.cpp","group":"local","local":true}

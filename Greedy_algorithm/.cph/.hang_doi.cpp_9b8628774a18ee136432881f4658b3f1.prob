@@ -1,0 +1,1 @@
+{"name":"Local: hang_doi","url":"d:\\work\\DSA\\Greedy_algorithm\\hang_doi.cpp","tests":[{"id":1717647189596,"input":"7\n4 3 17 4 5 14 20","output":"3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\work\\DSA\\Greedy_algorithm\\hang_doi.cpp","group":"local","local":true}

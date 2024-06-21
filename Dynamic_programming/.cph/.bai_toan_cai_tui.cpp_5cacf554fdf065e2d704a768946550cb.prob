@@ -1,0 +1,1 @@
+{"name":"Local: bai_toan_cai_tui","url":"d:\\work\\DSA\\Dynamic_programming\\bai_toan_cai_tui.cpp","tests":[{"id":1718635303418,"input":"6 22\n39 44 4 59 91 70 \n47 26 92 33 6 69","output":"92"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\work\\DSA\\Dynamic_programming\\bai_toan_cai_tui.cpp","group":"local","local":true}

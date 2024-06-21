@@ -1,0 +1,1 @@
+{"name":"Local: day_con_tang_dan","url":"d:\\work\\DSA\\BackTracking\\day_con_tang_dan.cpp","tests":[{"id":1717061174084,"input":"7\n4 8 6 7 3 5 2","output":"3 5 \n4 5 \n4 6 \n4 6 7 \n4 7 \n4 8 \n6 7"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\work\\DSA\\BackTracking\\day_con_tang_dan.cpp","group":"local","local":true}

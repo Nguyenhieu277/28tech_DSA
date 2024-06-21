@@ -1,0 +1,1 @@
+{"name":"Local: 28tech_DSa","url":"d:\\work\\DSA\\28tech_DSa.cpp","tests":[{"id":1717854142223,"input":"10\n3 2\n6 2\n10 24\n4 2\n5 4\n6 12\n7 22\n8 1\n7 18\n8 14","output":"JAVA\nJAVA\nJAVA\nC++\n28tech\nDSA\nC++\nC++\nC++\nC++"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\work\\DSA\\28tech_DSa.cpp","group":"local","local":true}

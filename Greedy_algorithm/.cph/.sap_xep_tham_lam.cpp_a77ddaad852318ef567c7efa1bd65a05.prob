@@ -1,0 +1,1 @@
+{"name":"Local: sap_xep_tham_lam","url":"d:\\work\\DSA\\Greedy_algorithm\\sap_xep_tham_lam.cpp","tests":[{"id":1717407044780,"input":"7\n1 6 5 4 3 2 7","output":"YES"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\work\\DSA\\Greedy_algorithm\\sap_xep_tham_lam.cpp","group":"local","local":true}

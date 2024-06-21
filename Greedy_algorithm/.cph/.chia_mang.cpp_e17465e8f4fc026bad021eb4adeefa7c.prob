@@ -1,0 +1,1 @@
+{"name":"Local: chia_mang","url":"d:\\work\\DSA\\Greedy_algorithm\\chia_mang.cpp","tests":[{"id":1717404598755,"input":"5 3\n2 8 9 1 3","output":"17"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\work\\DSA\\Greedy_algorithm\\chia_mang.cpp","group":"local","local":true}

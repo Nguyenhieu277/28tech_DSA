@@ -1,0 +1,1 @@
+{"name":"Local: gcd","url":"/home/hiudev/work/DSA/number_theory_and_mathetics.cpp/gcd.cpp","tests":[{"id":1715417748280,"input":"5\n3 14 15 7 9","output":"7"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/hiudev/work/DSA/number_theory_and_mathetics.cpp/gcd.cpp","group":"local","local":true}
