@@ -13,8 +13,7 @@ int n, m, s, t;
 vector<int> List[max_n];
 int visited[max_n];
 int mark[max_n];
-vector<int> path;
-int found = false;
+int parent[max_n];
 void input(){
     cin >> n >> m >> s >> t;
     for(int i = 1; i <= m; i++){
@@ -30,29 +29,32 @@ void input(){
 
 void DFS(int u) {
     visited[u] = 1;
-    path.push_back(u);
-    if(u == t){
-        found = true;
-        return;
-    }
     for(int it : List[u]){
         if(!visited[it]){
             DFS(it);
-            if(found) return;
+            parent[it] = u;
         }
     }
-    if(!found) path.pop_back();
+}
+void printPath(int s, int t){
+    DFS(s);
+    if(!visited[t]){
+        cout << -1 << endl;
+    }
+    else{
+        vector<int> res;
+        while(t != s){ 
+            res.push_back(t);
+            t = parent[t];
+        }
+        res.push_back(s);
+        reverse(res.begin(), res.end());
+        for(int it : res) cout << it << " ";
+    }
 }
 int main(){
     quick();
     input();
-    DFS(s);
-    if(found){
-        for(int it : path){
-            cout << it << " ";
-        }
-        cout << endl;
-    }
-    else cout << -1 << endl;
+    printPath(s, t);
     return 0;
 }
