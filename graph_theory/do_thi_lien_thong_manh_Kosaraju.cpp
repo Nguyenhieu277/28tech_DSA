@@ -2,8 +2,6 @@
 
 using namespace std;
 typedef long long ll;
-typedef pair <int, int> pii;
-typedef vector <vector<int>> vv;
 const int mod = 1000000007;
 #define max_n 1001
 #define MAX 1000001

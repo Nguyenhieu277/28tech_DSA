@@ -1,0 +1,1 @@
+{"name":"Local: dinh_tru_Tarjan","url":"d:\\work\\DSA\\graph_theory\\dinh_tru_Tarjan.cpp","tests":[{"id":1720525792557,"input":"10 6\n5 4\n5 2\n10 2\n10 7\n5 3\n10 1","output":"3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\work\\DSA\\graph_theory\\dinh_tru_Tarjan.cpp","group":"local","local":true}
