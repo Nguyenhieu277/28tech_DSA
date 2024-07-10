@@ -1,0 +1,1 @@
+{"name":"Local: lat_duong","url":"d:\\work\\DSA\\graph_theory\\lat_duong.cpp","tests":[{"id":1720537693081,"input":"5 3\n1 2\n1 3\n4 5","output":"4 2\n3 3\n2 3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\work\\DSA\\graph_theory\\lat_duong.cpp","group":"local","local":true}

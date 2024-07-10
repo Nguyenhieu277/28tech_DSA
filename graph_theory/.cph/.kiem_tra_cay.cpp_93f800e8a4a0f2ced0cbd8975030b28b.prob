@@ -1,0 +1,1 @@
+{"name":"Local: kiem_tra_cay","url":"d:\\work\\DSA\\graph_theory\\kiem_tra_cay.cpp","tests":[{"id":1720575948358,"input":"6 5\n4 3\n2 1\n6 5\n5 4\n3 2","output":"1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\work\\DSA\\graph_theory\\kiem_tra_cay.cpp","group":"local","local":true}
