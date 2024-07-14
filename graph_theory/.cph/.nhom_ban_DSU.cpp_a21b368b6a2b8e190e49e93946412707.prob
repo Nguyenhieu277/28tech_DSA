@@ -1,0 +1,1 @@
+{"name":"Local: nhom_ban_DSU","url":"d:\\work\\DSA\\graph_theory\\nhom_ban_DSU.cpp","tests":[{"id":1720700082403,"input":"10 6\n8 2\n4 1\n8 6\n8 7\n8 1\n8 5","output":"7"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\work\\DSA\\graph_theory\\nhom_ban_DSU.cpp","group":"local","local":true}

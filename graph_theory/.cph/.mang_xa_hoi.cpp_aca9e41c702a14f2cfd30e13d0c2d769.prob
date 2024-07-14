@@ -1,0 +1,1 @@
+{"name":"Local: mang_xa_hoi","url":"d:\\work\\DSA\\graph_theory\\mang_xa_hoi.cpp","tests":[{"id":1720710244378,"input":"4 3\n1 3\n3 4\n1 4","output":"YES"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\work\\DSA\\graph_theory\\mang_xa_hoi.cpp","group":"local","local":true}
