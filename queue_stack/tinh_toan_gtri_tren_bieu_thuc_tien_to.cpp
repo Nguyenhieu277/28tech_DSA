@@ -9,17 +9,19 @@ const int mod = 1000000007;
 
 /*created by: HiuDev*/
 
-void convert(string s){
-    stack<string> st;
+void solve(string s){
+    stack<int> st;
     for(int i = s.size() - 1; i >= 0; i--){
-        if(isalpha(s[i])){
-            st.push(string(1, s[i]));
+        if(isdigit(s[i])){
+            st.push(s[i] - '0');
         }
         else{
-            string tmp1 = st.top(); st.pop();
-            string tmp2 = st.top(); st.pop();
-            string tmp = tmp1 + tmp2 + s[i];
-            st.push(tmp);
+            int tmp1 = st.top(); st.pop();
+            int tmp2 = st.top(); st.pop();
+            if(s[i] == '+') st.push(tmp1 + tmp2);
+            else if(s[i] == '-') st.push(tmp1 - tmp2);
+            else if(s[i] == '/') st.push(tmp1 / tmp2);
+            else st.push(tmp1 * tmp2);
         }
     }
     cout << st.top() << endl;
@@ -28,6 +30,6 @@ int main(){
     Quick();
     string s;
     cin >> s;
-    convert(s);
+    solve(s);
     return 0;
 }
