@@ -1,0 +1,1 @@
+{"name":"Local: largest_rectangular_area_in_histogram","url":"d:\\work\\DSA\\queue_stack\\largest_rectangular_area_in_histogram.cpp","tests":[{"id":1721484249023,"input":"7\n6 2 5 4 5 1 6","output":"12"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\work\\DSA\\queue_stack\\largest_rectangular_area_in_histogram.cpp","group":"local","local":true}
