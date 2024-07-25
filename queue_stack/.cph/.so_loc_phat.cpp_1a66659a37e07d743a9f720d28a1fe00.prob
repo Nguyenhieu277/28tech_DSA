@@ -1,0 +1,1 @@
+{"name":"Local: so_loc_phat","url":"d:\\work\\DSA\\queue_stack\\so_loc_phat.cpp","tests":[{"id":1721655923905,"input":"2\n2\n3","output":"88 86 68 66 8 6\n888 886 868 866 688 686 668 666 88 86 68 66 8 6"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\work\\DSA\\queue_stack\\so_loc_phat.cpp","group":"local","local":true}
