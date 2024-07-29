@@ -1,0 +1,1 @@
+{"name":"Local: chu_so_khac_biet","url":"d:\\work\\DSA\\queue_stack\\chu_so_khac_biet.cpp","tests":[{"id":1721921476877,"input":"8\n9 41\n91 163\n28 59\n12 38\n72 127\n48 68\n50 101\n22 100","output":"17\n20\n15\n14\n8\n5\n5\n18\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\work\\DSA\\queue_stack\\chu_so_khac_biet.cpp","group":"local","local":true}
