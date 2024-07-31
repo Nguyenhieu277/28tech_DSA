@@ -35,12 +35,12 @@ void insertNode(node *root, int u, int v, char x){
         insertNode(root->right, u, v, x);
     }
 }
-int countLeaf(node *root){
-    if(root == NULL){
+int getMaxHeightTree(node *root){
+    if(root == NULL) return 0;
+    else if(root->left == NULL && root->right == NULL){
         return 0;
     }
-    if(root->left == NULL && root->right == NULL) return 1;
-    else return countLeaf(root->left) + countLeaf(root->right);
+    return max(getMaxHeightTree(root->left), getMaxHeightTree(root->right)) + 1;
 }
 int main(){
     Quick();
@@ -58,6 +58,6 @@ int main(){
             insertNode(root, u, v, x);
         }
     }
-    cout << countLeaf(root) << endl;
+    cout << getMaxHeightTree(root) << endl;
     return 0;
 }

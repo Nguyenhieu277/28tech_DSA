@@ -13,7 +13,7 @@ struct node{
     int val;
     node *left;
     node *right;
-
+    
     node(int x){
         val = x;
         left = right = NULL;
@@ -35,13 +35,16 @@ void insertNode(node *root, int u, int v, char x){
         insertNode(root->right, u, v, x);
     }
 }
-int countLeaf(node *root){
-    if(root == NULL){
-        return 0;
+bool isFullBinaryTree(node *root) {
+    if (root == NULL) return true;
+    
+    if ((root->left == NULL && root->right != NULL) || (root->left != NULL && root->right == NULL)) {
+        return false;
     }
-    if(root->left == NULL && root->right == NULL) return 1;
-    else return countLeaf(root->left) + countLeaf(root->right);
+    
+    return isFullBinaryTree(root->left) && isFullBinaryTree(root->right);
 }
+
 int main(){
     Quick();
     int n;
@@ -58,6 +61,9 @@ int main(){
             insertNode(root, u, v, x);
         }
     }
-    cout << countLeaf(root) << endl;
+    if(isFullBinaryTree(root)){
+        cout << "YES" << endl;
+    }
+    else cout << "NO" << endl;
     return 0;
 }

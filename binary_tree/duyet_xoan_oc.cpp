@@ -35,12 +35,33 @@ void insertNode(node *root, int u, int v, char x){
         insertNode(root->right, u, v, x);
     }
 }
-int countLeaf(node *root){
-    if(root == NULL){
-        return 0;
+void SpiralOder(node *root){
+    stack<node*> s1, s2;
+    s1.push(root);
+    while(!s1.empty() || !s2.empty()){
+        while(!s1.empty()){
+            auto tmp = s1.top();
+            s1.pop();
+            cout << tmp->val << " ";
+            if(tmp->right != NULL){
+                s2.push(tmp->right);
+            }
+            if(tmp->left != NULL){
+                s2.push(tmp->left);
+            }
+        }
+        while(!s2.empty()){
+            auto tmp = s2.top();
+            s2.pop();
+            cout << tmp->val << " ";
+            if(tmp->left != NULL){
+                s1.push(tmp->left);
+            }
+            if(tmp->right != NULL){
+                s1.push(tmp->right);
+            }
+        }
     }
-    if(root->left == NULL && root->right == NULL) return 1;
-    else return countLeaf(root->left) + countLeaf(root->right);
 }
 int main(){
     Quick();
@@ -58,6 +79,7 @@ int main(){
             insertNode(root, u, v, x);
         }
     }
-    cout << countLeaf(root) << endl;
+    SpiralOder(root);
     return 0;
 }
+/* No Code - No Bug */

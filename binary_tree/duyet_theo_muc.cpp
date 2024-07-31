@@ -13,7 +13,7 @@ struct node{
     int val;
     node *left;
     node *right;
-
+    
     node(int x){
         val = x;
         left = right = NULL;
@@ -35,12 +35,22 @@ void insertNode(node *root, int u, int v, char x){
         insertNode(root->right, u, v, x);
     }
 }
-int countLeaf(node *root){
-    if(root == NULL){
-        return 0;
+void LevelOder(node *root){
+    queue<node*> q;
+    q.push(root);
+    cout << root->val << " ";
+    while(!q.empty()){
+        node *tmp = q.front();
+        q.pop();
+        if(tmp->left != NULL){
+            q.push(tmp->left);
+            cout << tmp->left->val << " ";
+        } 
+        if(tmp->right != NULL){
+            q.push(tmp->right);
+            cout << tmp->right->val << " ";
+        }
     }
-    if(root->left == NULL && root->right == NULL) return 1;
-    else return countLeaf(root->left) + countLeaf(root->right);
 }
 int main(){
     Quick();
@@ -58,6 +68,7 @@ int main(){
             insertNode(root, u, v, x);
         }
     }
-    cout << countLeaf(root) << endl;
+    LevelOder(root);
     return 0;
 }
+/* No Code - No Bug */

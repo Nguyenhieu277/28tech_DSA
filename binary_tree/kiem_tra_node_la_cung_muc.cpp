@@ -35,12 +35,34 @@ void insertNode(node *root, int u, int v, char x){
         insertNode(root->right, u, v, x);
     }
 }
-int countLeaf(node *root){
+bool isSameLevel(node *root){
     if(root == NULL){
-        return 0;
+        return true;
     }
-    if(root->left == NULL && root->right == NULL) return 1;
-    else return countLeaf(root->left) + countLeaf(root->right);
+    queue<pair<node*, int>> q;
+    q.push({root, 0});
+    int leafLevel = -1;
+    while(!q.empty()){
+        auto x = q.front();
+        q.pop();
+        node *tmp = x.first;
+        int level = x.second;
+        if(tmp->left == NULL && tmp->right == NULL){
+            if(leafLevel == -1){
+                leafLevel = level;
+            }
+            else if(leafLevel != level){
+                return false;
+            }
+        }
+        if(tmp->left != NULL){
+            q.push({tmp->left, level + 1});
+        }
+        if(tmp->right != NULL){
+            q.push({tmp->right, level + 1});
+        }
+    }
+    return true;
 }
 int main(){
     Quick();
@@ -58,6 +80,9 @@ int main(){
             insertNode(root, u, v, x);
         }
     }
-    cout << countLeaf(root) << endl;
+    if(isSameLevel(root)){
+        cout << "YES" << endl;
+    }
+    else cout << "NO" << endl; 
     return 0;
 }
